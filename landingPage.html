@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/styles/style.css">
+
+    <link rel="icon" href="assets/img/logo.png">
+
+    <title>Iloveyouu!</title>
+
+    <style>
+        body {
+            background-color: var(--clr-green);
+            display: grid;
+            grid-template-columns: 1fr;
+            place-items: center;
+            height: 100vh;
+        }
+
+        .myContainer {
+            border-radius: 1em;
+            padding: 5em;
+            background-color: var(--clr-red);
+            display: flex;
+            flex-direction: column;
+            gap: 2em;
+
+            h1 {
+                font-size: var(--size-5xl);
+                color: var(--clr-white);
+                text-align: center;
+            }
+        }
+
+        .imy {
+            display: none;
+        }
+        
+
+        button {
+            padding: .5em;
+            width: 200px;
+            margin-inline: auto;
+            border-radius: .5em;
+            outline: none;
+            border: none;
+            font-size: var(--size-base);
+            font-weight: 600;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--clr-green);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="myContainer">
+        <h1 class="ily">I love you so muchhh!!!</h1>
+        <h1 class="imy">I miss you!</h1>
+        <button id="click">Click me</button>
+    </div>
+
+
+
+
+
+    <script>
+        const button = document.getElementById('click');
+        const ily = document.querySelector('.ily');
+        const imy = document.querySelector('.imy')
+
+        button.addEventListener('click', function() {
+            button.style.display = 'none';
+            ily.style.display = 'none';
+            imy.style.display = 'block';
+        })
+    </script>
+</body>
+
+
+</html>
