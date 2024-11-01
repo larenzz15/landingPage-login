@@ -48,7 +48,7 @@ button {
     display: flex;
     flex-direction: column;
     /* background: url(/assets/img/landingPage.svg) no-repeat center center fixed; */
-    background: url(/assets/img/landingPage.svg) no-repeat center center;
+    background: url(../img/landingPage.svg) no-repeat center center;
     background-size: cover; /* Ensures the image fills the screen width */
 }
 
